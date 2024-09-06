@@ -1,0 +1,230 @@
+
+body {
+    margin: 0;
+    background-color: #deebf7; /* #ebf5fe */
+}
+
+/* At least 2 properties */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7797ce;  
+    position: fixed;
+    top: 0;
+    padding: 0 1%;
+    width: 98%; 
+}
+
+.nav-item {
+    color: rgb(41, 52, 79);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.splash {
+    background-color: #9abaf1;
+    background-image: url("../images/BlueBackground.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light;
+    margin: auto;
+    padding: 5px 20px 20px 20px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 8fr;
+    gap: 2px;
+    
+    font-family: 'Lato', sans-serif;
+}
+
+.splash-item-1 {
+    grid-column-start: 2;
+}
+
+.splash-item-2 {
+    background-color: #9abaf1; /* #9fcdff */
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+    padding: 15px;
+    grid-column-start: 3;
+}
+
+/* At least 2 properties */
+footer {
+    display: flex; /* Children justify center */
+    background-color: #7797ce;
+    padding: 10px;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+/* At least 3 changes. Use Google font and color */
+h1 {
+    color: rgb(41, 52, 79);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Style the border and/or border-radius of headshot */
+img {
+    border-radius: 5px 10px 10px;
+    box-shadow: 0 4px 8px 0 #7797ce;
+}
+
+img:hover {
+    border-radius: 5px 10px 10px;
+}
+
+/* Change style of this paragraph */
+.address-paragraph {
+    color: rgb(41, 52, 79);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+/* Change style of this paragraph */
+.tag-line-paragraph {
+    color: rgb(41, 52, 79);
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+/* Style >= 2 border properties of the horizontal rules */
+hr {
+    margin: auto;
+    border: 1px solid #1f2f4b;
+    border-style: dashed;
+}
+
+h2 {
+    color: rgb(41, 52, 79);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+h3 {
+    text-align: center;
+}
+
+section {
+    font-family: 'Lato', sans-serif;
+    /* background-color: #c2d6f9; */
+    display: grid;
+    
+}
+
+.education {
+    background-color: #7797ce;
+    margin: 10px;
+    padding: 2px 20px 2px 20px;
+    border-radius: 10px;
+}
+
+.e-layout {
+    display: flex;
+    justify-content: space-between;
+    background-color: #7797ce;  
+    margin: 0;
+}
+
+.e-item {
+    color: rgb(41, 52, 79);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0;
+}
+
+.courses {
+    margin-top: 10px;
+}
+
+.education-info {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.honors {
+    background-color: #9abaf1;
+    margin: 10px;
+    padding: 2px 20px 2px 20px;
+    border-radius: 10px;
+}
+
+.skills {
+    background-color: #bbd0f6;
+    margin: 10px;
+    padding: 2px 20px 2px 20px;
+    border-radius: 10px;
+}
+
+.leadership {
+    background-color: #d2e1fe;
+    margin: 10px;
+    padding: 2px 20px 2px 20px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: circle outside;
+    padding: auto;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.three-col {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+}
+
+.card {
+    background-color: #d2e1fe;
+    box-shadow: 0 4px 8px 0 #7797ce;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    
+}
+
+.card-image {
+    border: 10px 0px 10px 0px solid;
+    border-radius: 10px;
+    box-shadow: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.one-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 150px;
+    font-family: 'Lato', sans-serif;
+}
+
+form {
+    padding: 20px 0px;
+}
+
+.form-item {
+    border-color: #7797ce;
+    background-color: #f3f8fd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
