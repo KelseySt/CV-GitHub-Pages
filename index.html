@@ -19,39 +19,49 @@
 <body>
     <nav>
         <p class="nav-item">Kelsey Sterner</p>
-        <p class="nav-item"><a href="./contact.html">Contact Kelsey</a></p>
+        <p class="nav-item"><a class="links" href="./contact.html">Contact Kelsey</a></p>
     </nav>
 
     <section class="splash">
-        <div class="splash-item-1">
-            <h1>Kelsey Sterner</h1>
-            <img src="./images/headshot.jpg" alt="Headshot of Kelsey" width="160" />
+        <div class="splash-item-1 profile">
+            
+            <img src="./images/headshotSquare.jpg" alt="Headshot of Kelsey" width="190" />
+            <h1 class="about-me">Kelsey Sterner</h1>
+            <hr />
+            <p class="address-paragraph">470-514-8239<br />kelsey.nsterner@gmail.com<br />425 Riverbend Pkwy<br />Athens, GA</p>
         </div>
         <div class="splash-item-2">
-            <p class="address-paragraph">425 Riverbend Pkwy, Athens, GA 30605 &#9679; 470-514-8239 &#9679; kelsey.nsterner@gmail.com</p>
-            <p class="tag-line-paragraph">I am a computer science student at the University of Georgia with an emphasis in software design, applied data science and a minor in Korean language. I am interested in data analytics and full-stack software engineering to leverage technology to provide business solutions.</p>
+            <h2 class="about-me">About Me</h2>
+            <p class="tag-line-paragraph">I am a <b>computer science</b> student at the University of Georgia with an emphasis in <b>software design</b>, <b>applied data science</b> and a minor in Korean language. 
+                I am interested in <b>data analytics</b> and <b>full-stack software engineering</b> to leverage technology to provide business solutions.</p>
+            <div class="splash-divider"></div>
         </div>
-    </section>
+        <div class="splash-item-3">
+            <section class="education">
+                <h2>Education</h2>
+                <div class="e-layout">
+                    <p class="education-info e-item"><b>University of Georgia</b>, Morehead Honors College 
+                    <p class="e-item">Athens, GA</p>
+                </div>
+                <div class="e-layout">
+                    <p class="e-item">Bachelor of Science in Computer Science</p>
+                    <p class="e-item">May 2026</p> 
+                </div>
+                <div class="e-layout">
+                    <p class="e-item">Minor in Korean Language and Literature</p>
+                    <p class="e-item">GPA: 4.00/4.00</p>
+                </div>
+                
+                <p class="courses"><b>Courses:</b> Algorithms, Data Structures, Web Programming, Theory of Computing, Systems Programming, Software Development (Java), Discrete Mathematics</p>
+            </section>
 
-    <hr />
-
-    <section class="education">
-        <h2>Education</h2>
-        <div class="e-layout">
-            <p class="education-info e-item">University of Georgia, Morehead Honors College 
-            <p class="e-item">Athens, GA</p>
-        </div>
-        <div class="e-layout">
-            <p class="e-item">Bachelor of Science in Computer Science</p>
-            <p class="e-item">May 2026</p> 
-        </div>
-        <div class="e-layout">
-            <p class="e-item">Minor in Korean Language and Literature</p>
-            <p class="e-item">GPA: 4.00/4.00</p>
         </div>
         
-        <p class="courses"><b>Courses:</b> Algorithms, Data Structures, Web Programming, Theory of Computing, Systems Programming, Software Development (Java), Discrete Mathematics</p>
     </section>
+    <hr />
+    
+
+    
 
     <section class="honors">
         <h2>Honors and Awards</h2>
@@ -77,34 +87,43 @@
     <section class="leadership">
         <h2>Leadership and Experience</h2>
         <dl>
+            <div class="list-split">
             <dt><b>DevDogs</b> | <em>Co-Founder, Engagement Officer, Open-source Contributor</em></dt>
             <dd>Jun 2024 &ndash; Present</dd>
+            </div>
+            <div class="list-split">
             <dt><b>Girls Who Code</b> | <em>Volunteer</em></dt>
             <dd>Aug 2023 &ndash; Present</dd>
-            <dt><b><a href="https://www.cleanjuice.com/">Shift Lead</a></b></dt>
+            </div>
+            <div class="list-split">
+            <dt><b><a class="links" href="https://www.cleanjuice.com/">Shift Lead</a></b> | <em>In-Store Manager</em></dt>
             <dd>Jul 2022 &ndash; Present</dd>
+            </div>
         </dl>
     </section>
 
-    <section>
+    <section class="project">
         <h2 class="center">Projects</h2>
         <div class="three-col">
             <div class="card">
+                <a href="https://www.devdogs.uga.edu">
                 <h3>DevDogs Website</h3>
                 <img class="card-image" src="images/CVDevDogsWebsite.png" alt="DevDogs Website Image" width="320"/>
                     <ul class="card-text">
                         <li>Develop and launch fully responsive website for open-source software club using Next.js, Node.js, React, and custom styling to enhance user experience and increase club engagement</li>
                         <li>Coordinate the pull request review process, leading to efficient deployment cycles and well-maintained code</li>
                     </ul>
+                </a>
             </div>
             <div class="card">
-                <h3>Google Data Analytics Professional Certificate Capstone 
-                    <a href="kaggle.com/kelseyst"><br />Kaggle Notebook</a></h3>
+                <a href="https://www.kaggle.com/kelseyst">
+                <h3>Google Data Analytics Professional Certificate Capstone</h3>
                 <img class="card-image" src="images/KaggleCaseStudy.png" alt="DevDogs Website Image" width="320"/>
                 <ul class="card-text">
                     <li>Conducted data analysis case study using R, posted on Kaggle, involving cleaning, transforming, and visualizing large datasets to uncover actionable insights for stakeholders</li>
                     <li>Gained proficiency in data analytics skills including data cleaning, data visualization, and data-driven decision-making using tools such as R, SQL, and Tableau</li>
                 </ul>
+                </a>
             </div>
             <div class="card">
                 <h3>Stock Volitility Indicator</h3>
@@ -116,6 +135,6 @@
         </div>
     </section>
     
-    <footer>&#169; <a href="./index.html">Kelsey Sterner</a> &#9679; <a href="https://www.linkedin.com/in/kelsey-sterner" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></footer>
+    <footer>&#169; <a class="links" href="./index.html">Kelsey Sterner</a> &#9679; <a class="links" href="https://www.linkedin.com/in/kelsey-sterner" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></footer>
 </body>
 </html>
