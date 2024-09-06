@@ -30,7 +30,7 @@ nav {
     object-fit: cover;
     background-blend-mode: soft-light;
     margin: 10px 0 0 0;
-    padding: 5px 20px 20px 20px;
+    padding: 5px 50px 20px 20px;
     align-items: center;
     display: grid;
     grid-template-columns: 2fr 3fr 1fr 11fr;
@@ -54,23 +54,6 @@ nav {
 
 .about-me {
     font-size: xx-large;
-}
-
-
-.splash-2 {
-    background-color: #9abaf1;
-    background-image: url("../images/BlueBackground.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: soft-light;
-    margin: 50px 0 0 0;
-    padding: 5px 20px 20px 20px;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr 6fr 8fr;
-    gap: 2px;
-    
-    font-family: 'Lato', sans-serif;
 }
 
 .splash-item-1 {
@@ -137,7 +120,8 @@ img:hover {
 .address-paragraph {
     color: rgb(41, 52, 79);
     font-family: 'Lato', sans-serif;
-    font-weight: 500;
+    font-size: large;
+    font-weight: bold;
 }
 
 /* Change style of this paragraph */
@@ -152,7 +136,7 @@ img:hover {
 hr {
     margin: auto;
     border: 1px solid #1f2f4b;
-    border-style: dashed;
+    border-style: solid;
 }
 
 h2 {
@@ -179,16 +163,17 @@ section {
 }
 
 .education {
-    background-color: #7797ce;
+    background-color: #83a3d8;
     margin: 10px;
     padding: 2px 20px 2px 20px;
     border-radius: 10px;
+    color: rgb(41, 52, 79);
 }
 
 .e-layout {
     display: flex;
     justify-content: space-between;
-    background-color: #7797ce;  
+    background-color: #83a3d8;;  
     margin: 0;
 }
 
@@ -211,7 +196,7 @@ section {
 
 .honors {
     background-color: #9abaf1;
-    
+    color: rgb(41, 52, 79);
     padding: 2px 20px 2px 20px;
     border-radius: 10px;
     font-size: x-large;
@@ -219,15 +204,19 @@ section {
 
 .skills {
     background-color: #bbd0f6;
-    
+    color: rgb(41, 52, 79);
     padding: 2px 20px 2px 20px;
     border-radius: 10px;
     font-size: x-large;
 }
 
+.skills-list {
+    font-size: x-large;
+}
+
 .leadership {
     background-color: #d2e1fe;
-    
+    color: rgb(41, 52, 79);
     padding: 2px 20px 2px 20px;
     border-radius: 10px;
     font-size: x-large;
@@ -242,6 +231,10 @@ ul {
 dt {
     font-weight: bold;
     font-family: 'Lato', sans-serif;
+}
+
+li {
+    font-size: large;
 }
 
 .list-split {
@@ -259,6 +252,7 @@ dt {
 
 .project {
     margin: 60px 10px 60px 10px;
+    font-size: larger
 }
 
 .three-col {
@@ -266,14 +260,16 @@ dt {
     gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 20px;
+    margin-top: 50px;
 }
 
 .card {
     background-color: #d2e1fe;
-    
     transition: ease-in 0.15s;
     border-radius: 20px;
     margin-bottom: 100px;
+    max-width: 500px;
+    color: rgb(41, 52, 79);
     
 }
 
@@ -302,13 +298,32 @@ dt {
 
 .center {
     text-align: center;
+    font-size: xxx-large;
 }
 
 .one-col {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0px 150px;
+    margin: 0px 50px;
     font-family: 'Lato', sans-serif;
+    width: 50%;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.contact {
+    margin: 20px 5px 20px 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: center;
+}
+
+.contact-title {
+    order: 1;
 }
 
 form {
