@@ -199,7 +199,9 @@ section {
     color: rgb(41, 52, 79);
     padding: 2px 20px 2px 20px;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: large;
+    width: 80%;
+    margin: 50px auto;
 }
 
 .skills {
@@ -207,11 +209,13 @@ section {
     color: rgb(41, 52, 79);
     padding: 2px 20px 2px 20px;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: large;
+    width: 80%;
+    margin: 50px auto;
 }
 
 .skills-list {
-    font-size: x-large;
+    font-size: large;
 }
 
 .leadership {
@@ -219,7 +223,9 @@ section {
     color: rgb(41, 52, 79);
     padding: 2px 20px 2px 20px;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: large;
+    width: 80%;
+    margin: 50px auto;
 }
 
 ul {
@@ -235,6 +241,11 @@ dt {
 
 li {
     font-size: large;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .list-split {
@@ -277,6 +288,14 @@ li {
     box-shadow: 0 4px 8px 0 #7797ce;
 }
 
+@media only screen and (max-width: 600px) {
+    .three-col {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+  }
+
 .card-image {
     border: 10px 0px 10px 0px solid;
     border-radius: 10px;
@@ -304,19 +323,31 @@ li {
 .one-col {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0px 50px;
     font-family: 'Lato', sans-serif;
-    width: 50%;
+}
+
+.wrapper {
+    margin: 100px auto;
+    width: 60%;
+    padding:20px;
+    background-color: #d6e8fe;
+    background-image: url("../images/BlueCardBackgroundHoriz.png");
+    background-blend-mode: soft-light;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 #7797ce;
+    text-align: center;
+    font-size: large;
+    color: #315085;
 }
 
 .two-col {
-    display: flex;
-    justify-content: space-evenly;
+    display: flexbox;
+    text-align: center;
     margin-top: 50px;
 }
 
 .contact {
-    margin: 20px 5px 20px 50px;
+    margin: 20px auto;
     display: flex;
     flex-direction: column-reverse;
     align-self: center;
@@ -331,10 +362,27 @@ form {
 }
 
 .form-item {
-    border-color: #7797ce;
+    border-radius: 10px;
+    border: none;
     background-color: #f3f8fd;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    font-size: large;
+    width: 85%;
+    margin: auto;
+}
+
+.submit {
+    background-color: #7797ce;
+    padding: 8px;
+    border: 0.5 0.5 0.5 0.5;
+    color:#f3f8fd;
+}
+
+.submit:hover {
+    background-color: #f3f8fd;
+    border-color: #deebf7;
+    color: #315085;
 }
 
 a {
